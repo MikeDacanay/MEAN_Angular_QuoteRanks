@@ -1,0 +1,8 @@
+<div class = 'quote1'>
+	<h2>{{toro}}</h2>
+	{{passDown_1 | json}}
+	<div class = 'quoter' *ngFor='let x of passDown_1'>
+		<p>{{x.quote}}</p>
+		<p><i>-{{x.author}}</i></p>
+	</div>
+</div>

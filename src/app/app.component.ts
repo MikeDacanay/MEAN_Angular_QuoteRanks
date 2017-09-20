@@ -27,4 +27,8 @@ export class AppComponent {
 			author: ""
 		}
 	}
+
+	removeQuote(eventdata){
+		console.log(eventdata);
+	}
 }

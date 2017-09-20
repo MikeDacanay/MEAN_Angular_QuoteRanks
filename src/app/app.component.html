@@ -30,4 +30,4 @@
 <!--   {{quote.errors | json}}
   {{author.errors | json}} -->
 </div>
-<app-quotelist [passDown_1]='list_to_pass'></app-quotelist>
+<app-quotelist (deleteEventEmitter)="removeQuote($event)" [passDown_1]='list_to_pass'></app-quotelist>

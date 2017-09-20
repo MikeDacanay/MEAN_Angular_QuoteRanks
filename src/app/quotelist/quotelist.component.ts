@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 
 @Component({
 	selector: 'app-quotelist',
@@ -7,10 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class QuotelistComponent implements OnInit {
 	@Input() passDown_1;
+	@Output() deleteEventEmitter = new EventEmitter();
 	toro = 'Quote List';
 	constructor() { }
 
 	ngOnInit() {
 	}
 
+	triggerdelete(val){
+	console.log(val)
+	}
 }

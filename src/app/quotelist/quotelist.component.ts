@@ -15,6 +15,6 @@ export class QuotelistComponent implements OnInit {
 	}
 
 	triggerdelete(val){
-	console.log(val)
+		this.deleteEventEmitter.emit(val);
 	}
 }

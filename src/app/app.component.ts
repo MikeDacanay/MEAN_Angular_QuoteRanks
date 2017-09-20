@@ -30,5 +30,6 @@ export class AppComponent {
 
 	removeQuote(eventdata){
 		console.log(eventdata);
+		this.list_to_pass.splice(eventdata,1);
 	}
 }
